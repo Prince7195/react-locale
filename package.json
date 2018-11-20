@@ -10,7 +10,7 @@
     "compile": "./node_modules/.bin/tsc GlobalConnector.ts -w"
   },
   "keywords": [],
-  "author": "",
+  "author": "Vijay Deepak",
   "license": "ISC",
   "devDependencies": {
     "@types/react": "^16.7.3",
