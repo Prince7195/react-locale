@@ -1,0 +1,40 @@
+{
+  "name": "react-locale",
+  "version": "1.0.0",
+  "description": "A Localized React App",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"webpack --mode development\" \"npm start\"",
+    "start": "webpack-dev-server --mode development --hot",
+    "build": "webpack --mode production",
+    "compile": "./node_modules/.bin/tsc GlobalConnector.ts -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^16.7.3",
+    "@types/react-dom": "^16.0.9",
+    "@types/react-intl": "^2.3.12",
+    "@types/react-redux": "^6.0.9",
+    "@types/react-router-dom": "^4.3.1",
+    "awesome-typescript-loader": "^5.2.1",
+    "concurrently": "^4.0.1",
+    "source-map-loader": "^0.2.4",
+    "typescript": "^3.1.6",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-intl": "^2.7.2",
+    "react-redux": "^5.1.1",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "rx-react-container": "^0.6.2",
+    "rxjs": "^6.3.3"
+  }
+}

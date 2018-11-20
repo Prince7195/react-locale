@@ -1,0 +1,10 @@
+{
+    "en": {
+        "title": "Simple Localization",
+        "TITLE": "SAMPLE"
+    },
+    "fr": {
+        "title": "Simple Localization French",
+        "TITLE": "SAMPLE"
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>React Locale</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/5.5.12/Rx.js"></script>
+    <script src="./GlobalConnector.js"></script>
+</head>
+
+<body>
+    <button id="langChange" onclick="changeLang()" value="en">Lang = EN</button>
+    <div id="apps"></div>
+    <div>
+        Widget 2 - <span id="app"></span>
+    </div>
+    <script src="./bundle.js"></script>
+    <script src="./bundle2.js"></script>
+    <script>
+        const button = document.getElementById("langChange");
+        var listener = Store.GlobalListener;
+        function changeLang() {
+            let lang = "en";
+            if (button.value == "en") {
+                button.value = "fr";
+                lang = "fr";
+                button.innerHTML = "Lang = FR";
+            } else {
+                button.value = "en";
+                lang = "en";
+                button.innerHTML = "Lang = EN";
+            }
+            listener.dispatch({
+                type: "init",
+                payload: lang
+            });
+        }
+    </script>
+</body>
+
+</html>
